@@ -10,6 +10,23 @@ Production portfolio site for game development and software engineering work.
 - Framer Motion
 - React Icons
 
+## Source structure
+
+```text
+src/
+  assets/        Images and video placeholders
+  components/    Shared UI building blocks
+  data/          Site content (projects, skills, timeline)
+  hooks/         Reusable React hooks
+  layout/        Navbar, Footer, page shell
+  sections/      Page sections (Hero, Projects, etc.)
+  styles/        Global Tailwind layers
+  types/         Shared TypeScript types
+  utils/         Helpers
+```
+
+Path alias: `@/` → `src/`
+
 ## Scripts
 
 | Command           | Description                       |

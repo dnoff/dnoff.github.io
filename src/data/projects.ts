@@ -1,0 +1,63 @@
+import type { Project } from '../types';
+
+export const PROJECTS: Project[] = [
+  {
+    id: 'racer',
+    title: 'Racer',
+    tagline: 'Published Android endless driving game',
+    description:
+      'Published Android endless driving game built in Unity with cloud save, authentication, leaderboards, and monetization systems.',
+    status: 'published',
+    technologies: [
+      'Unity',
+      'C#',
+      'Firebase Authentication',
+      'Firebase Realtime Database',
+      'Google Play',
+      'Google Mobile Ads',
+      'Android',
+      'Blender',
+    ],
+    features: [
+      'Cloud save',
+      'Authentication',
+      'Leaderboards',
+      'Daily rewards',
+      'Unlockable cars',
+      'Car shop',
+      'Audio settings',
+      'Rewarded ads',
+      'Remove Ads purchase',
+      'Responsive UI',
+      'Object pooling',
+      'Performance optimization',
+    ],
+    featureCards: [],
+    challenges: [],
+    lessons: [],
+    developmentNotes: [],
+  },
+  {
+    id: 'slay-the-streamer',
+    title: 'Slay the Streamer',
+    tagline: 'Top-down roguelite inspired by Enter the Gungeon',
+    description:
+      'Top-down roguelite with enemy AI, boss fights, weapons, projectile combat, connected rooms, and progression systems. Actively in development.',
+    status: 'in-development',
+    technologies: ['Unity', 'C#', 'Pixel Art'],
+    features: [
+      'Enemy AI',
+      'Boss fight',
+      'Weapons',
+      'Projectile combat',
+      'Connected rooms',
+      'Progression systems',
+      'Health',
+      'Animation',
+    ],
+    featureCards: [],
+    challenges: [],
+    lessons: [],
+    developmentNotes: [],
+  },
+];
