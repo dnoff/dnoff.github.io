@@ -1,4 +1,5 @@
 import { SITE, SOCIAL_LINKS } from '../data';
+import { scrollToHash } from '../utils';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -25,6 +26,10 @@ export function Footer() {
         </ul>
         <a
           href="#home"
+          onClick={(event) => {
+            event.preventDefault();
+            scrollToHash('#home');
+          }}
           className="text-sm text-accent transition-colors hover:text-accent-secondary"
         >
           Back to top

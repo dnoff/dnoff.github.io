@@ -3,7 +3,12 @@ import { SITE } from '../data';
 
 export function Hero() {
   return (
-    <section id="home" className="section-padding scroll-mt-24" aria-labelledby="home-heading">
+    <section
+      id="home"
+      className="section-padding scroll-mt-24 pt-28 sm:pt-32"
+      aria-labelledby="home-heading"
+    >
+      {' '}
       <div className="container-site">
         <div className="glass-panel p-8 sm:p-12">
           <p className="badge mb-4">Architecture ready</p>
