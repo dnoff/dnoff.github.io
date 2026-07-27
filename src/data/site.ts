@@ -6,8 +6,7 @@ export const SITE = {
   tagline: 'Unity Developer • Mathematics Graduate • Software Engineer',
   introduction:
     'I build engaging gameplay experiences, software tools, and interactive systems with a passion for polished design and technical problem solving.',
-  /** Update with your real email before launch. */
-  email: 'mailto:hello@example.com',
+  email: 'mailto:davidin1995@gmail.com',
   resumePath: '/resume.pdf',
 } as const;
 
@@ -19,15 +18,23 @@ export const NAV_LINKS: NavLink[] = [
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
 
-/** Update these URLs with your real profiles before launch. */
 export const SOCIAL_LINKS: SocialLink[] = [
   { id: 'github', label: 'GitHub', href: 'https://github.com/dnoff' },
-  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/david-nissenoff-680453133',
+  },
 ];
 
 export const CONTACT_METHODS: ContactMethod[] = [
   { id: 'github', label: 'GitHub', href: 'https://github.com/dnoff', external: true },
-  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/', external: true },
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/david-nissenoff-680453133',
+    external: true,
+  },
   { id: 'email', label: 'Email', href: SITE.email },
   { id: 'resume', label: 'Resume', href: SITE.resumePath },
 ];

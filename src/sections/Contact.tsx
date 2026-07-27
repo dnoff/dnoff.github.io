@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { FiFileText, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import { CONTACT_METHODS, SITE } from '../data';
+import { CONTACT_METHODS } from '../data';
 
 const CONTACT_ICONS = {
   github: FiGithub,
@@ -70,7 +70,7 @@ export function Contact() {
                   </span>
                   <span className="mt-0.5 block text-sm text-text-muted">
                     {method.id === 'email'
-                      ? SITE.email.replace('mailto:', '')
+                      ? 'davidin1995@gmail.com'
                       : method.id === 'resume'
                         ? 'Download PDF'
                         : 'Open profile'}
