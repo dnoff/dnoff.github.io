@@ -4,3 +4,4 @@ export { TechnologyBadge } from './TechnologyBadge';
 export { MediaPlaceholder } from './MediaPlaceholder';
 export { FeatureCard } from './FeatureCard';
 export { ProjectShowcase } from './ProjectShowcase';
+export { SkillCard } from './SkillCard';
