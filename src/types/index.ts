@@ -17,18 +17,26 @@ export type ProjectFeature = {
   description: string;
 };
 
+export type ProjectMedia = {
+  type: 'screenshot' | 'video';
+  label: string;
+  caption?: string;
+};
+
 export type Project = {
   id: string;
   title: string;
   tagline: string;
   description: string;
   status: ProjectStatus;
+  statusLabel: string;
   technologies: string[];
   features: string[];
   featureCards: ProjectFeature[];
   challenges: string[];
   lessons: string[];
   developmentNotes: string[];
+  media: ProjectMedia[];
   links?: {
     playStore?: string;
     github?: string;

@@ -6,8 +6,9 @@ export const PROJECTS: Project[] = [
     title: 'Racer',
     tagline: 'Published Android endless driving game',
     description:
-      'Published Android endless driving game built in Unity with cloud save, authentication, leaderboards, and monetization systems.',
+      'A published Android endless driving game built in Unity. Players race through procedurally paced stretches of road while unlocking cars, chasing leaderboard ranks, and engaging with cloud-backed progression systems.',
     status: 'published',
+    statusLabel: 'Published on Google Play',
     technologies: [
       'Unity',
       'C#',
@@ -32,18 +33,62 @@ export const PROJECTS: Project[] = [
       'Object pooling',
       'Performance optimization',
     ],
-    featureCards: [],
-    challenges: [],
-    lessons: [],
-    developmentNotes: [],
+    featureCards: [
+      {
+        title: 'Cloud Progression',
+        description:
+          'Firebase Authentication and Realtime Database keep player saves, unlocks, and leaderboard state synced across sessions.',
+      },
+      {
+        title: 'Live-Service Systems',
+        description:
+          'Daily rewards, rewarded ads, and a Remove Ads purchase support retention without breaking core gameplay flow.',
+      },
+      {
+        title: 'Performance-Minded Gameplay',
+        description:
+          'Object pooling and mobile-focused optimization keep frame pacing stable across a wide range of Android devices.',
+      },
+      {
+        title: 'Player Economy Loop',
+        description:
+          'Unlockable cars and a shop give players long-term goals beyond a single endless run.',
+      },
+    ],
+    challenges: [
+      'Balancing monetization with fair gameplay so ads and purchases never feel required to enjoy the core loop.',
+      'Keeping runtime performance stable while supporting responsive UI, audio settings, and frequent spawning systems.',
+      'Designing cloud save and authentication flows that stay reliable across install, reinstall, and network interruption cases.',
+    ],
+    lessons: [
+      'Shipping on Google Play forces product thinking: retention, onboarding, and crash-free sessions matter as much as mechanics.',
+      'Systems architecture early (pooling, save data, shop state) pays off when features stack quickly.',
+      'Polished mobile UX is a gameplay feature — readable menus and responsive controls directly affect session length.',
+    ],
+    developmentNotes: [
+      'Built in Unity with C# gameplay systems and Blender-authored vehicle content.',
+      'Integrated Firebase for authentication, cloud save, and leaderboard support.',
+      'Shipped with Google Mobile Ads and Google Play billing for rewarded ads and Remove Ads.',
+    ],
+    media: [
+      {
+        type: 'video',
+        label: 'Gameplay Trailer Placeholder',
+        caption: 'Replace with Racer gameplay capture',
+      },
+      { type: 'screenshot', label: 'Screenshot 1', caption: 'Highway gameplay' },
+      { type: 'screenshot', label: 'Screenshot 2', caption: 'Car shop / unlocks' },
+      { type: 'screenshot', label: 'Screenshot 3', caption: 'Leaderboards' },
+    ],
   },
   {
     id: 'slay-the-streamer',
     title: 'Slay the Streamer',
     tagline: 'Top-down roguelite inspired by Enter the Gungeon',
     description:
-      'Top-down roguelite with enemy AI, boss fights, weapons, projectile combat, connected rooms, and progression systems. Actively in development.',
+      'An actively developed top-down roguelite focused on readable combat, room-to-room exploration, and satisfying projectile gunplay. The project is growing into a full dungeon-crawl experience with bosses, weapons, and progression systems.',
     status: 'in-development',
+    statusLabel: 'Active Development',
     technologies: ['Unity', 'C#', 'Pixel Art'],
     features: [
       'Enemy AI',
@@ -55,9 +100,52 @@ export const PROJECTS: Project[] = [
       'Health',
       'Animation',
     ],
-    featureCards: [],
-    challenges: [],
-    lessons: [],
-    developmentNotes: [],
+    featureCards: [
+      {
+        title: 'Projectile Combat',
+        description:
+          'Bullet-pattern readability and weapon feel are central design goals, inspired by Gungeon-style encounter spacing.',
+      },
+      {
+        title: 'Enemy & Boss AI',
+        description:
+          'Enemies and boss encounters are being tuned for telegraph clarity, pressure, and distinct combat identities.',
+      },
+      {
+        title: 'Connected Room Flow',
+        description:
+          'Dungeon spaces link into traversable room networks so exploration and combat pacing reinforce each other.',
+      },
+      {
+        title: 'Progression Systems',
+        description:
+          'Health, weapons, and run progression are evolving together so each successful clear feels earned and replayable.',
+      },
+    ],
+    challenges: [
+      'Creating enemy AI that feels threatening without becoming unfair or visually noisy.',
+      'Building connected room layouts that stay navigable while supporting procedural variety.',
+      'Keeping animation, projectiles, and collision feedback crisp at top-down scale.',
+    ],
+    lessons: [
+      'Roguelite combat quality comes from iteration: feel, telegraphs, and recovery windows matter more than raw content volume.',
+      'Prototype systems early, then harden architecture once the core loop is fun.',
+      'Pixel art readability is a combat constraint — silhouette and contrast affect player reaction time.',
+    ],
+    developmentNotes: [
+      'Currently in active development with core combat, rooms, and progression foundations in place.',
+      'Focus areas: boss encounter polish, weapon variety, and dungeon flow.',
+      'Built in Unity with custom C# gameplay systems and pixel-art presentation.',
+    ],
+    media: [
+      {
+        type: 'video',
+        label: 'Dev Footage Placeholder',
+        caption: 'Replace with current Slay the Streamer gameplay',
+      },
+      { type: 'screenshot', label: 'Screenshot 1', caption: 'Combat encounter' },
+      { type: 'screenshot', label: 'Screenshot 2', caption: 'Boss fight' },
+      { type: 'screenshot', label: 'Screenshot 3', caption: 'Connected rooms' },
+    ],
   },
 ];

@@ -1,16 +1,7 @@
 export { Hero } from './Hero';
+export { Projects } from './Projects';
 
 import { SectionPlaceholder } from '../components';
-
-export function Projects() {
-  return (
-    <SectionPlaceholder
-      id="projects"
-      title="Projects"
-      description="Steam-style featured project pages for Racer and Slay the Streamer will be built in Milestone 6."
-    />
-  );
-}
 
 export function Skills() {
   return (
