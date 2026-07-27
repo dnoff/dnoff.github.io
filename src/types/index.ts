@@ -21,6 +21,10 @@ export type ProjectMedia = {
   type: 'screenshot' | 'video';
   label: string;
   caption?: string;
+  /** Image URL/import or public video path */
+  src?: string;
+  /** Optional poster frame for videos */
+  poster?: string;
 };
 
 export type Project = {
@@ -37,6 +41,7 @@ export type Project = {
   lessons: string[];
   developmentNotes: string[];
   media: ProjectMedia[];
+  coverImage?: string;
   links?: {
     playStore?: string;
     github?: string;

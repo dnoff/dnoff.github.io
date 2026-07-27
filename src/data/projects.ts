@@ -1,4 +1,8 @@
 import type { Project } from '../types';
+import racerAppIcon from '../assets/images/racer/app-icon.png';
+import racerGameplay from '../assets/images/racer/gameplay.png';
+import racerMainMenu from '../assets/images/racer/main-menu.png';
+import racerShop from '../assets/images/racer/shop.jpg';
 
 export const PROJECTS: Project[] = [
   {
@@ -9,6 +13,7 @@ export const PROJECTS: Project[] = [
       'A published Android endless driving game built in Unity. Players race through procedurally paced stretches of road while unlocking cars, chasing leaderboard ranks, and engaging with cloud-backed progression systems.',
     status: 'published',
     statusLabel: 'Published on Google Play',
+    coverImage: racerAppIcon,
     technologies: [
       'Unity',
       'C#',
@@ -73,12 +78,29 @@ export const PROJECTS: Project[] = [
     media: [
       {
         type: 'video',
-        label: 'Gameplay Trailer Placeholder',
-        caption: 'Replace with Racer gameplay capture',
+        label: 'Racer Trailer',
+        caption: 'Gameplay trailer and feature highlights',
+        src: '/videos/racer/trailer.mp4',
+        poster: racerAppIcon,
       },
-      { type: 'screenshot', label: 'Screenshot 1', caption: 'Highway gameplay' },
-      { type: 'screenshot', label: 'Screenshot 2', caption: 'Car shop / unlocks' },
-      { type: 'screenshot', label: 'Screenshot 3', caption: 'Leaderboards' },
+      {
+        type: 'screenshot',
+        label: 'In-Game',
+        caption: 'Endless highway gameplay',
+        src: racerGameplay,
+      },
+      {
+        type: 'screenshot',
+        label: 'Car Shop',
+        caption: 'Unlockable cars and paint customization',
+        src: racerShop,
+      },
+      {
+        type: 'screenshot',
+        label: 'Main Menu',
+        caption: 'Title screen and progression entry point',
+        src: racerMainMenu,
+      },
     ],
   },
   {

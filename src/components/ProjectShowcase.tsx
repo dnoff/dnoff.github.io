@@ -30,39 +30,51 @@ export function ProjectShowcase({ project, index = 0 }: ProjectShowcaseProps) {
       aria-labelledby={`${project.id}-title`}
     >
       <div className="border-b border-white/10 bg-gradient-to-r from-background-card/80 to-transparent px-6 py-6 sm:px-8 sm:py-8">
-        <div className="flex flex-wrap items-center gap-3">
-          <span
-            className={cn(
-              'badge',
-              isInDevelopment
-                ? 'border-accent/40 bg-accent/10 text-accent-secondary'
-                : 'border-emerald-400/30 bg-emerald-400/10 text-emerald-300',
-            )}
-          >
-            {project.statusLabel}
-          </span>
-          {isInDevelopment ? (
-            <span className="text-xs font-medium uppercase tracking-[0.16em] text-text-muted">
-              Work in progress — actively shipping systems
-            </span>
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-center gap-3">
+              <span
+                className={cn(
+                  'badge',
+                  isInDevelopment
+                    ? 'border-accent/40 bg-accent/10 text-accent-secondary'
+                    : 'border-emerald-400/30 bg-emerald-400/10 text-emerald-300',
+                )}
+              >
+                {project.statusLabel}
+              </span>
+              {isInDevelopment ? (
+                <span className="text-xs font-medium uppercase tracking-[0.16em] text-text-muted">
+                  Work in progress — actively shipping systems
+                </span>
+              ) : null}
+            </div>
+
+            <h3
+              id={`${project.id}-title`}
+              className="mt-4 font-display text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+            >
+              {project.title}
+            </h3>
+            <p className="mt-2 text-base text-accent-secondary sm:text-lg">{project.tagline}</p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-muted sm:text-base">
+              {project.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {project.technologies.map((tech) => (
+                <TechnologyBadge key={tech} label={tech} />
+              ))}
+            </div>
+          </div>
+
+          {project.coverImage ? (
+            <img
+              src={project.coverImage}
+              alt={`${project.title} cover art`}
+              className="h-28 w-28 shrink-0 rounded-2xl border border-white/10 object-cover shadow-soft sm:h-32 sm:w-32"
+            />
           ) : null}
-        </div>
-
-        <h3
-          id={`${project.id}-title`}
-          className="mt-4 font-display text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
-        >
-          {project.title}
-        </h3>
-        <p className="mt-2 text-base text-accent-secondary sm:text-lg">{project.tagline}</p>
-        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-text-muted sm:text-base">
-          {project.description}
-        </p>
-
-        <div className="mt-5 flex flex-wrap gap-2">
-          {project.technologies.map((tech) => (
-            <TechnologyBadge key={tech} label={tech} />
-          ))}
         </div>
       </div>
 
