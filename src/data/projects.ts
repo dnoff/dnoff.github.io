@@ -3,6 +3,9 @@ import racerAppIcon from '../assets/images/racer/app-icon.png';
 import racerGameplay from '../assets/images/racer/gameplay.png';
 import racerMainMenu from '../assets/images/racer/main-menu.png';
 import racerShop from '../assets/images/racer/shop.jpg';
+import stsBossFight from '../assets/images/slay-the-streamer/boss-fight.png';
+import stsCombat from '../assets/images/slay-the-streamer/combat.png';
+import stsConnectedRooms from '../assets/images/slay-the-streamer/connected-rooms.png';
 
 export const PROJECTS: Project[] = [
   {
@@ -111,6 +114,7 @@ export const PROJECTS: Project[] = [
       'An actively developed top-down roguelite focused on readable combat, room-to-room exploration, and satisfying projectile gunplay. The project is growing into a full dungeon-crawl experience with bosses, weapons, and progression systems.',
     status: 'in-development',
     statusLabel: 'Active Development',
+    coverImage: stsBossFight,
     technologies: ['Unity', 'C#', 'Pixel Art'],
     features: [
       'Enemy AI',
@@ -162,12 +166,29 @@ export const PROJECTS: Project[] = [
     media: [
       {
         type: 'video',
-        label: 'Dev Footage Placeholder',
-        caption: 'Replace with current Slay the Streamer gameplay',
+        label: 'Gameplay Footage',
+        caption: 'Early development build — audio mix in progress',
+        src: '/videos/slay-the-streamer/gameplay.mp4',
+        poster: stsBossFight,
       },
-      { type: 'screenshot', label: 'Screenshot 1', caption: 'Combat encounter' },
-      { type: 'screenshot', label: 'Screenshot 2', caption: 'Boss fight' },
-      { type: 'screenshot', label: 'Screenshot 3', caption: 'Connected rooms' },
+      {
+        type: 'screenshot',
+        label: 'Boss Fight',
+        caption: 'Streamer boss encounter with projectile combat',
+        src: stsBossFight,
+      },
+      {
+        type: 'screenshot',
+        label: 'Combat',
+        caption: 'Top-down room combat with enemy AI',
+        src: stsCombat,
+      },
+      {
+        type: 'screenshot',
+        label: 'Connected Rooms',
+        caption: 'Dungeon layout with multi-directional exits',
+        src: stsConnectedRooms,
+      },
     ],
   },
 ];
