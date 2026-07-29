@@ -12,14 +12,14 @@ export const PROJECTS: Project[] = [
     description:
       'A published Android endless driving game built in Unity. Players race through procedurally paced stretches of road while unlocking cars, chasing leaderboard ranks, and engaging with cloud-backed progression systems.',
     status: 'published',
-    statusLabel: 'Published on Google Play',
+    statusLabel: 'Shipped Android Title',
     coverImage: racerAppIcon,
     technologies: [
       'Unity',
       'C#',
       'Firebase Authentication',
       'Firebase Realtime Database',
-      'Google Play',
+      'Google Play Services',
       'Google Mobile Ads',
       'Android',
       'Blender',
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
       'Designing cloud save and authentication flows that stay reliable across install, reinstall, and network interruption cases.',
     ],
     lessons: [
-      'Shipping on Google Play forces product thinking: retention, onboarding, and crash-free sessions matter as much as mechanics.',
+      'Shipping a live mobile title forces product thinking: retention, onboarding, and crash-free sessions matter as much as mechanics.',
       'Systems architecture early (pooling, save data, shop state) pays off when features stack quickly.',
       'Polished mobile UX is a gameplay feature — readable menus and responsive controls directly affect session length.',
     ],

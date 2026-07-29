@@ -9,7 +9,7 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: 'racer',
     title: 'Published Racer',
-    description: 'Released an Android endless driving game on Google Play.',
+    description: 'Shipped an Android endless driving game (formerly on Google Play).',
   },
   {
     id: 'slay-the-streamer',

@@ -155,7 +155,7 @@ def main() -> None:
     labeled_line(
         pdf,
         "Game Dev: ",
-        "Unity, Blender, Android, Firebase Auth/Realtime DB, Google Play, Mobile Ads",
+        "Unity, Blender, Android, Firebase Auth/Realtime DB, Google Play services, Mobile Ads",
     )
     labeled_line(pdf, "Tools: ", "Git, Visual Studio, Cursor, Android Studio, Photoshop, Premiere")
 
